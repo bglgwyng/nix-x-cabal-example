@@ -34,7 +34,7 @@
           haskellPackages = pkgs.haskell.packages.ghc9101;
           default-repositories = {
             "hackage.haskell.org" = {
-              url = "http://hackage.haskell.org";
+              url = "http://hackage.haskell.org/";
               index = inputs.haskell-hackage-org-index;
               root = inputs.haskell-hackage-org-root;
             };
@@ -52,13 +52,7 @@
           cabal-projects.example1 = {
             root = ./example1;
             inherit haskellPackages;
-            repositories = {
-              "hackage.haskell.org" = {
-                url = "http://hackage.haskell.org";
-                index = inputs.haskell-hackage-org-index;
-                root = inputs.haskell-hackage-org-root;
-              };
-            };
+            repositories = default-repositories;
           };
 
           cabal-projects.example2 = {
