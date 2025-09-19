@@ -5,7 +5,7 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
 
-    nix-x-cabal.url = "path:/home/bglgwyng/Documents/GitHub/nix-x-cabal";
+    nix-x-cabal.url = "github:bglgwyng/nix-x-cabal";
 
     haskell-hackage-org-index = {
       url = "file+https://hackage.haskell.org/01-index.tar.gz";
